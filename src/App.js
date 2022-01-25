@@ -13,7 +13,7 @@ export default function App() {
       .then(res => setData(res.data));
   }, []);
 
-  // Won't be loading on startup 
+  // Won't be loading on startup
   // useEffect(() => getData(), [getData]);
 
   const addItem = function() {
@@ -43,7 +43,7 @@ export default function App() {
         <button onClick={addItem}>Add Item</button>
       </div>
 
-      <button type="button" onClick={getData}>Get New Friends</button>
+      <button id="friendFetcher" type="button" onClick={getData}>Get New Friends</button>
 
       <ul>{itemList}</ul>
     </div>
